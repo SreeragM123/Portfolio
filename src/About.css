@@ -1,0 +1,79 @@
+/* General container */
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./assets/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+/* Content section */
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency for better visibility */
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 800px;
+  height: 60vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  margin-left: 60px;
+}
+
+/* Header for the section */
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* Email style */
+.email {
+  font-size: 30px;
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Description text */
+.description {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Location info */
+.location {
+  font-size: 20px;
+  color: #bbb;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .email {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .location {
+    font-size: 14px;
+  }
+}

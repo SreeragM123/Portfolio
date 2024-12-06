@@ -1,0 +1,148 @@
+/* General container for the contact section */
+.container-resr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url('./assets/2.jpg'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  /* Additional styles here... */
+  
+  /* Main content section */
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Left section - skills, languages, and personal skills */
+  .left-section {
+    height: 60vh;
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Heading style */
+  h2 {
+    margin-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  /* Range input styling */
+ /* Remove default appearance of input */
+input[type="range"] {
+    -webkit-appearance: none; /* Removes default WebKit styles */
+    appearance: none; /* For non-WebKit browsers */
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Customize the thumb (the draggable part of the range input) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  input[type="range"]:focus {
+    background: #aaa;
+  }
+  
+  /* Personal skills section */
+  .personal-skills p {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  /* Right section - education */
+  .right-section {
+    flex: 1.5;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Education section */
+  .education p {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .project p {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container-resr {
+      padding: 10px;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      margin-bottom: 20px;
+    }
+  
+    .left-section {
+      margin-right: 0;
+    }
+  }
+  
